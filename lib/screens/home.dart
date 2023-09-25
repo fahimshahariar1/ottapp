@@ -20,6 +20,7 @@ class _HomeState extends State<Home> {
           Container(
             height: 180,
             color: Colors.white,
+            child: Image.asset("assets/images/a.png"),
           ),
           SizedBox(
             height: 20,
@@ -51,7 +52,81 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  height: 90,
+                  height: 70,
+                  width: 90,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYnbWhJqpIaDqnyduRJi6S4q96CKig08OMcRwC6eGsjt6CXtcLXjImSHE-SMJ7cOySyM&usqp=CAU")),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
+                  width: 90,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: CircleAvatar(
+                    maxRadius: 50,
+                    minRadius: 20,
+                    backgroundImage: NetworkImage(
+                        "https://topinbangladesh.com/wp-content/uploads/2020/10/Independent-TV-Logo-1024x469.jpg"),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
+                  width: 90,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: CircleAvatar(
+                    backgroundImage:
+                        NetworkImage("https://iili.io/HC82XEB.png"),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
+                  width: 90,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(50),),
+                  child: CircleAvatar(
+                    backgroundImage:
+                    NetworkImage("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/11-dhakabanglacom-dbc-news-bangladesh.jpg"),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
+                  width: 90,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(50),),
+                  child: CircleAvatar(
+                    backgroundImage:
+                    NetworkImage("https://cdn-0.bongonote.com/wp-content/uploads/Btv-logo.png?ezimgfmt=rs:364x204/rscb2/ng:webp/ngcb2"),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 70,
                   width: 90,
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -61,57 +136,7 @@ class _HomeState extends State<Home> {
                   width: 10,
                 ),
                 Container(
-                  height: 90,
-                  width: 90,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50)),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 90,
-                  width: 90,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50)),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 90,
-                  width: 90,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50)),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 90,
-                  width: 90,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50)),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 90,
-                  width: 90,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50)),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 90,
+                  height: 70,
                   width: 90,
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -121,7 +146,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 30,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -130,22 +155,16 @@ class _HomeState extends State<Home> {
                 "Trendig Movies and Shows",
                 style: GoogleFonts.lato(color: Colors.white),
               ),
-
             ],
           ),
           SizedBox(
             height: 20,
           ),
-
           Container(
             height: 250,
             color: Colors.black,
             child: Carousel(),
           ),
-
-
-
-
         ],
       ),
     );
